@@ -2,6 +2,7 @@ import React, { } from 'react';
 import { Layout, Menu, Card, Col, Row, Image } from 'antd';
 import './App.css';
 import 'antd/dist/antd.css';
+import ProjectHighlight from '../ProjectHighlight/ProjectHighlight';
 
 function App() {
   const { Meta } = Card;
@@ -65,45 +66,33 @@ function App() {
                 </Row>
                 <Row >
                   <Col>
-                    <Card
-                      hoverable
-                      style={{ width: 650 }}
-                      cover={<img alt="example" src="https://i1.wp.com/derekhackett.com/wp-content/uploads/2019/11/ida.jpg" />}
-                      onClick={() => window.open('https://www.microsoft.com/en-us/ai/ai-lab-project-ida', '_blank')}
-                    >
-                      <Meta title="IDA" description="IDA is an out-of-the-box, newsroom ready solution that uses Azure AI to rapidly index vast quantities of data including documents, photos, emails, PDFs, audio and video. Then it extracts key entities like people, places, things and date, and intelligently find connections between them. Easy to deploy, and results are presented in easy to navigate visualizations." />
-                    </Card>
+                    <ProjectHighlight imageSource="https://i1.wp.com/derekhackett.com/wp-content/uploads/2019/11/ida.jpg"
+                      url="https://www.microsoft.com/en-us/ai/ai-lab-project-ida"
+                      title="IDA"
+                      description="IDA is an out-of-the-box, newsroom ready solution that uses Azure AI to rapidly index vast quantities of data including documents, photos, emails, PDFs, audio and video. Then it extracts key entities like people, places, things and date, and intelligently find connections between them. Easy to deploy, and results are presented in easy to navigate visualizations."
+                    />
                   </Col>
                 </Row>
                 <Row style={{ paddingTop: '10px' }}>
-                  <Card
-                    hoverable
-                    style={{ width: 650 }}
-                    cover={<img alt="example" src="https://i0.wp.com/derekhackett.com/wp-content/uploads/2019/11/NetworkSiouxFalls.jpg" />}
-                    onClick={() => window.open('https://github.com/DerekHackett/Network-Sioux-Falls', '_blank')}
-                  >
-                    <Meta title="Network Sioux Falls" description="This is a local networking page for technology topic in Sioux Falls." />
-                  </Card>
+                  <ProjectHighlight imageSource="https://i0.wp.com/derekhackett.com/wp-content/uploads/2019/11/NetworkSiouxFalls.jpg"
+                    url="https://github.com/DerekHackett/Network-Sioux-Falls"
+                    title="Network Sioux Falls"
+                    description="This is a local networking page for technology topic in Sioux Falls."
+                  />
                 </Row>
                 <Row style={{ paddingTop: '10px' }}>
-                  <Card
-                    hoverable
-                    style={{ width: 650 }}
-                    cover={<img alt="example" src="https://i0.wp.com/derekhackett.com/wp-content/uploads/2018/01/GravanaHomePage.png" />}
-                    onClick={() => window.open('http://www.gravana.org/', '_blank')}
-                  >
-                    <Meta title="Gravana" description="A writing and grammar learning platform built from scratch with lessons, quizzing and grading." />
-                  </Card>
+                  <ProjectHighlight imageSource="https://i0.wp.com/derekhackett.com/wp-content/uploads/2018/01/GravanaHomePage.png"
+                    url="http://www.gravana.org/"
+                    title="Gravana"
+                    description="A writing and grammar learning platform built from scratch with lessons, quizzing and grading."
+                  />
                 </Row>
                 <Row style={{ paddingTop: '10px' }}>
-                  <Card
-                    hoverable
-                    style={{ width: 650 }}
-                    cover={<img alt="example" src="https://i0.wp.com/derekhackett.com/wp-content/uploads/2018/01/KoGHomePage.png" />}
-                    onClick={() => window.open('http://www.kingofglorysf.org/', '_blank')}
-                  >
-                    <Meta title="King of Glory" description="King of Church church site built on top of Squarespace platform." />
-                  </Card>
+                  <ProjectHighlight imageSource="https://i0.wp.com/derekhackett.com/wp-content/uploads/2018/01/KoGHomePage.png"
+                    url="http://www.kingofglorysf.org/"
+                    title="King of Glory"
+                    description="King of Church church site built on top of Squarespace platform."
+                  />
                 </Row>
               </Col>
             </Row>
