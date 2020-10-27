@@ -7,7 +7,7 @@ function App() {
   const { Meta } = Card;
   const handleBlogClick = () => window.open('http://www.derekhackett.com', '_blank');
   const handleHomeClick = () => window.location.href = "";
-  const { Header, Footer, Sider, Content } = Layout;
+  const { Header, Footer, Content } = Layout;
 
   return (
     <div className="App">
